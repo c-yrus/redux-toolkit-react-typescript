@@ -14,7 +14,7 @@ export const iceCreamSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(addPancake, (state, action) => {
+    builder.addCase(addPancake, (state) => {
       state.value += 2
     })
   },

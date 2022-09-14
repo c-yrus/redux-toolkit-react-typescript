@@ -6,8 +6,7 @@ export const pancakeSlice = createSlice({
   initialState,
   reducers: {
     addPancake: (state, action) => {
-      console.log(action.payload)
-      state.value += action.payload.value
+      state.value += action.payload
     },
     sellPancake: (state) => {
       if (state.value > 0) state.value -= 1

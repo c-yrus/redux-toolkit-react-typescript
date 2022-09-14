@@ -12,7 +12,7 @@ export default function App() {
       <div>
         <h1>pancake : {pancakes}</h1>
         <div>
-          <button onClick={() => dispatch(addPancake({ pancakes, value: 5 }))}>+1</button>
+          <button onClick={() => dispatch(addPancake(5))}>+1</button>
           <button onClick={() => dispatch(sellPancake())}>-1</button>
         </div>
       </div>
